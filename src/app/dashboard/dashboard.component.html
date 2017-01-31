@@ -1,0 +1,8 @@
+<tabs *ngIf="selectedPlayer">
+  <tab title="Edit Profile">
+    <app-edit-player [playerToEdit]="selectedPlayer"></app-edit-player>
+  </tab>
+  <tab title="Recent Games">
+    <app-game-log [playerForLog]="selectedPlayer"></app-game-log>
+  </tab>
+</tabs>

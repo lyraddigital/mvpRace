@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Points</th>
+      <th>Rebounds</th>
+      <th>Assists</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let log of playerForLog.gameLogs">
+      <td>{{log.points}}</td>
+      <td>{{log.rebounds}}</td>
+      <td>{{log.assists}}</td>
+    </tr>
+  </tbody>
+</table>

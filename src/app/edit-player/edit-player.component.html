@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-block profile-heading">
+    <h4>Edit Profile</h4>
+  </div>
+  
+  <form>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <strong>Name: </strong> 
+          <span [style.display]="getDisplayFlag(!editName)">
+            {{playerToEdit.name}}
+            <a (click)="showEditName()">Edit</a>
+          </span>
+          <span [style.display]="getDisplayFlag(editName)">
+            <input type="text" name="name" [(ngModel)]="playerToEdit.name" />
+            <button class="btn btn-primary" (click)="saveName()">Save</button>
+          </span>
+      </li>
+      <li class="list-group-item">
+        <strong>Bio: </strong> 
+          <p [style.display]="getDisplayBlockFlag(!editBio)">
+            {{playerToEdit.bio}} <br />
+            <a (click)="showEditBio()">Edit</a>
+          </p>
+          <div [style.display]="getDisplayBlockFlag(editBio)">
+            <textarea cols="130" rows="6" name="bio" [(ngModel)]="playerToEdit.bio"></textarea> <br />
+            <button class="btn btn-primary" (click)="saveBio()">Save</button>
+          </div>
+      </li>
+    </ul>
+  </form>
+</div>

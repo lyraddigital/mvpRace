@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.nav-tabs {
+    margin-bottom: 1rem;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .active {
+    display: block;
+}

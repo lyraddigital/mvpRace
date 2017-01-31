@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.vsSection {
+    min-height: 650px;
+    position: relative;
+}
+
+.vsText {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -4.5rem;
+    margin-left: -2.5rem;
+}

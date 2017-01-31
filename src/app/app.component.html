@@ -1,0 +1,21 @@
+<h1>The MVP Race</h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-5">
+      <!-- http://thesource.com/wp-content/uploads/2015/12/james-harden.jpg -->
+      <app-player-card [selectedPlayer]="leftPlayer" (chosen)="selectPlayer($event)"></app-player-card>
+    </div>
+    <div class="col-xs-2 vsSection">
+      <div class="vsText">VS</div>
+    </div>
+    <div class="col-xs-5">
+      <!-- http://www.slamonline.com/wp-content/uploads/2016/08/russ.jpg -->
+      <app-player-card [selectedPlayer]="rightPlayer" (chosen)="selectPlayer($event)"></app-player-card>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <app-dashboard [selectedPlayer]="selectedPlayer"></app-dashboard>
+</div>

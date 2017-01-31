@@ -1,0 +1,9 @@
+<div class="card" *ngIf="selectedPlayer" [ngClass]="selectedPlayer.cardCssClass" (click)="choosePlayer()">
+    <img class="card-img-top" [src]="selectedPlayer.imagePath" [alt]="selectedPlayer.name">
+    <div class="card-block">
+      <h4 class="card-title">{{selectedPlayer.name}}</h4>
+      <p class="card-text">
+        {{selectedPlayer.bio}}
+      </p>
+    </div>
+  </div>
